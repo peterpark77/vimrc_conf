@@ -74,8 +74,12 @@ endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 
+"multiple tabs
 
-
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
 
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplete#undo_completion()
